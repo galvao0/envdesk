@@ -1,0 +1,130 @@
+.container {
+  min-height: 100vh;
+  position: relative;
+
+  .header {
+    background: linear-gradient(90deg, #000000 0%, #0a1024 50%, #000000 100%);
+    color: white;
+    padding-bottom: 50px;
+
+    header {
+      padding: 10px;
+      padding-top: 20px;
+      img {
+        object-fit: contain;
+        width: 133px;
+      }
+    }
+
+    .section-widgets {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+
+      .widget {
+        width: 115px;
+        background: rgba(182, 182, 182, 0.322);
+        height: 133px;
+        padding: 1.2rem 1.5rem;
+        border-radius: 33px;
+        border: 1px solid #5e5e5e;
+        box-shadow: 0px 0px 10px 0px #131313;
+        transition: transform 180ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+        &:active {
+          transform: scale(0.96);
+        }
+
+        .title {
+          font-size: 0.8rem;
+          color: #aaa9a9;
+          margin-bottom: 5px;
+        }
+
+        .icon-widget {
+          width: 40px;
+          height: 40px;
+          background: rgba(182, 182, 182, 0.322);
+          backdrop-filter: blur(15px);
+          -webkit-backdrop-filter: blur(15px);
+          border: 1px solid rgba(255, 255, 255, 0.15);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 100%;
+          margin-bottom: 20px;
+        }
+
+        div {
+          display: flex;
+          gap: 5px;
+          align-items: baseline;
+
+          .days {
+            font-size: 2rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    border-radius: 200px;
+    position: relative;
+    top: -25px;
+    padding: 19px;
+    background-color: #fff;
+  }
+
+  .bottombar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    justify-content: space-between;
+    border: 1px solid #f0efef;
+    padding: 15px;
+    border-radius: 50px;
+    padding-inline: 25px;
+    box-shadow: 0 0 10px 1px #e9e9e9;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      lucide-icon {
+        color: #535353;
+      }
+
+      p {
+        font-size: 0.7rem;
+      }
+    }
+
+    .item-add {
+      background-color: #0a1024;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+
+      lucide-icon {
+        color: #f7f6f6;
+      }
+    }
+
+    .active {
+      lucide-icon {
+        stroke-width: 2px;
+        color: #000000;
+      }
+    }
+  }
+}

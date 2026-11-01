@@ -1,0 +1,65 @@
+<main class="container">
+  <div class="header">
+    <header>
+      <img src="logo-white-without-bg.png" />
+    </header>
+    <section class="section-widgets">
+      <div class="widget">
+        <div class="icon-widget"><lucide-icon [img]="Fire"></lucide-icon></div>
+        <p class="title">Ofensiva</p>
+        <div>
+          <p class="days">09</p>
+          <p>dias</p>
+        </div>
+      </div>
+      <div class="widget">
+        <div class="icon-widget"><lucide-icon [img]="Fire"></lucide-icon></div>
+        <p class="title">Ofensiva</p>
+        <div>
+          <p class="days">09</p>
+          <p>dias</p>
+        </div>
+      </div>
+      <div class="widget">
+        <div class="icon-widget"><lucide-icon [img]="Fire"></lucide-icon></div>
+        <p class="title">Ofensiva</p>
+        <div>
+          <p class="days">09</p>
+          <p>dias</p>
+        </div>
+      </div>
+      <div class="widget">
+        <div class="icon-widget"><lucide-icon [img]="Fire"></lucide-icon></div>
+        <p class="title">Ofensiva</p>
+        <div>
+          <p class="days">09</p>
+          <p>dias</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="content">
+    <router-outlet />
+  </section>
+  <div class="bottombar">
+    <div [class.active]="rAtual === '/'">
+      <lucide-icon [img]="Home" [strokeWidth]="1"></lucide-icon>
+      <p>Home</p>
+    </div>
+    <div [class.active]="rAtual === '/treinos'">
+      <lucide-icon [img]="Weight" [strokeWidth]="1"></lucide-icon>
+      <p>Treinos</p>
+    </div>
+    <div class="item-add">
+      <lucide-icon [img]="Plus" [strokeWidth]="1"></lucide-icon>
+    </div>
+    <div [class.active]="rAtual === '/desafios'">
+      <lucide-icon [img]="Trophy" [strokeWidth]="1"></lucide-icon>
+      <p>Desafios</p>
+    </div>
+    <div [class.active]="rAtual === '/afazeres'">
+      <lucide-icon [img]="List" [strokeWidth]="1"></lucide-icon>
+      <p>Afazeres</p>
+    </div>
+  </div>
+</main>
